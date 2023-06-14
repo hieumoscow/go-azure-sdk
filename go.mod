@@ -1,4 +1,4 @@
-module github.com/hashicorp/go-azure-sdk
+module github.com/hieumoscow/go-azure-sdk
 
 go 1.19
 
