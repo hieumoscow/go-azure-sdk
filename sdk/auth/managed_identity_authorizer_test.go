@@ -54,9 +54,10 @@ func TestAccManagedIdentityAuthorizer(t *testing.T) {
 	}
 
 	opts := auth.ManagedIdentityAuthorizerOptions{
-		Api:                           env.MicrosoftGraph,
-		ClientId:                      test.ClientId,
-		CustomManagedIdentityEndpoint: test.CustomManagedIdentityEndpoint,
+		Api:                             env.MicrosoftGraph,
+		ClientId:                        test.ClientId,
+		CustomManagedIdentityEndpoint:   test.CustomManagedIdentityEndpoint,
+		CustomManagedIdentityApiVersion: test.CustomManagedIdentityApiVersion,
 	}
 
 	authorizer, err := auth.NewManagedIdentityAuthorizer(ctx, opts)
